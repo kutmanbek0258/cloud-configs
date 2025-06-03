@@ -3,7 +3,6 @@ spring:
     gateway:
       routes:
         - id: wms-service
-            uri: "http://servicea:9001"
             predicates:
               - Path=/** # Path predicate for URI path matching
             filters:
