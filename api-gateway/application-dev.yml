@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          client-id: j-service-client
+          client-secret: j-service-client
+          introspection-uri: ${SSO_URL:http://localhost:9001}/oauth2/token-info
