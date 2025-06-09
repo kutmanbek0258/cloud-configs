@@ -1,0 +1,34 @@
+spring:
+  security:
+    headers:
+      csp:
+        - default-src 'self'
+        - script-src 'self' 'unsafe-inline' 'unsafe-eval'
+        - "img-src 'self' data:"
+        - font-src 'self' fonts.gstatic.com
+        - style-src 'self' fonts.googleapis.com 'unsafe-inline'
+        - frame-ancestors 'self'
+      hsts:
+        max-age: 63072000
+        include-sub-domains: true
+        preload: true
+      permission-policy:
+        - picture-in-picture=()
+        - accelerometer=()
+        - autoplay=()
+        - battery=()
+        - camera=()
+        - display-capture=()
+        - geolocation=()
+        - gyroscope=()
+        - magnetometer=()
+        - microphone=()
+        - midi=()
+        - payment=()
+        - picture-in-picture=()
+        - publickey-credentials-create=()
+        - publickey-credentials-get=()
+        - screen-wake-lock=()
+        - serial=()
+        - speaker-selection=()
+        - usb=()
